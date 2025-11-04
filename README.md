@@ -5,3 +5,9 @@ Features search, sorting, top-rated filter, dark mode, and responsive layout.
 
 **Tech:** HTML | CSS | JavaScript  
 **Duration:** 5 Days 
+
+### 📅 Day 1
+✅ Built homepage UI with static restaurant cards  
+✅ Designed grid layout and search bar  
+
+Next: Add dynamic data loading and hover effects.
