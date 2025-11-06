@@ -1,17 +1,24 @@
 const restaurants = [
-  { name: "Pizza Hut", img: "https://picsum.photos/300/200?1" },
-  { name: "Burger King", img: "https://picsum.photos/300/200?2" },
-  { name: "Subway", img: "https://picsum.photos/300/200?3" },
-  { name: "KFC", img: "https://picsum.photos/300/200?4" }
+  { name: "Pizza Hut", cuisine: "Italian", rating: 4.2, img: "https://picsum.photos/300/200?1" },
+  { name: "Burger King", cuisine: "American", rating: 4.0, img: "https://picsum.photos/300/200?2" },
+  { name: "Subway", cuisine: "Healthy", rating: 4.5, img: "https://picsum.photos/300/200?3" },
+  { name: "KFC", cuisine: "Fried Chicken", rating: 4.3, img: "https://picsum.photos/300/200?4" },
+  { name: "Barbeque Nation", cuisine: "Buffet", rating: 4.6, img: "https://picsum.photos/300/200?5" }
 ];
 
 const list = document.querySelector(".restaurant-list");
 
-restaurants.forEach(r => {
-  list.innerHTML += `
-    <div class="card">
-      <img src="${r.img}">
-      <h3>${r.name}</h3>
-    </div>
-  `;
-});
+function displayRestaurants(data) {
+  list.innerHTML = "";
+  data.forEach(r => {
+    list.innerHTML += `
+      <div class="card">
+        <img src="${r.img}">
+        <h3>${r.name}</h3>
+        <p>${r.cuisine}</p>
+        <p>⭐ ${r.rating}</p>
+      </div>`;
+  });
+}
+
+displayRestaurants(restaurants);

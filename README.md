@@ -11,3 +11,9 @@ Features search, sorting, top-rated filter, dark mode, and responsive layout.
 ✅ Designed grid layout and search bar  
 
 Next: Add dynamic data loading and hover effects.
+
+### 📅 Day 2
+✅ Loaded restaurant data dynamically using JS  
+✅ Added hover animations for cards  
+
+Next: Implement search bar functionality.
