@@ -17,3 +17,10 @@ Next: Add dynamic data loading and hover effects.
 ✅ Added hover animations for cards  
 
 Next: Implement search bar functionality.
+
+
+### 📅 Day 3
+✅ Added live search filtering by restaurant name or cuisine  
+✅ Improved user interaction  
+
+Next: Add sorting and "Top Rated" filter.

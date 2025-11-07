@@ -22,3 +22,13 @@ function displayRestaurants(data) {
 }
 
 displayRestaurants(restaurants);
+const searchInput = document.getElementById("search");
+
+searchInput.addEventListener("keyup", () => {
+  const val = searchInput.value.toLowerCase();
+  const filtered = restaurants.filter(r =>
+    r.name.toLowerCase().includes(val) ||
+    r.cuisine.toLowerCase().includes(val)
+  );
+  displayRestaurants(filtered);
+});
