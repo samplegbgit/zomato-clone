@@ -24,3 +24,10 @@ Next: Implement search bar functionality.
 ✅ Improved user interaction  
 
 Next: Add sorting and "Top Rated" filter.
+
+### 📅 Day 4
+✅ Added sorting by rating  
+✅ Added "Top Rated" filter button  
+✅ Enhanced UI buttons styling  
+
+Next: Add dark mode and responsive layout.

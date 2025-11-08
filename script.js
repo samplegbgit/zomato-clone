@@ -32,3 +32,16 @@ searchInput.addEventListener("keyup", () => {
   );
   displayRestaurants(filtered);
 });
+
+const sortBtn = document.getElementById("sort-rating");
+const topBtn = document.getElementById("filter-top");
+
+sortBtn.addEventListener("click", () => {
+  const sorted = [...restaurants].sort((a, b) => b.rating - a.rating);
+  displayRestaurants(sorted);
+});
+
+topBtn.addEventListener("click", () => {
+  const topRated = restaurants.filter(r => r.rating >= 4.5);
+  displayRestaurants(topRated);
+});
