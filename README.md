@@ -31,3 +31,8 @@ Next: Add sorting and "Top Rated" filter.
 ✅ Enhanced UI buttons styling  
 
 Next: Add dark mode and responsive layout.
+
+### 📅 Day 5
+✅ Added dark mode toggle 🌙  
+✅ Made design fully responsive 📱  
+🎉 Project completed!

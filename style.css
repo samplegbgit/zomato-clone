@@ -62,3 +62,31 @@ button {
 button:hover {
   background: #c12f3b;
 }
+.dark {
+  background: #121212;
+  color: #eee;
+}
+
+.dark header {
+  background: #a22d38;
+}
+
+.dark .card {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .restaurant-list {
+    grid-template-columns: 1fr;
+  }
+
+  header input {
+    width: 80%;
+  }
+}

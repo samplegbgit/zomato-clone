@@ -45,3 +45,14 @@ topBtn.addEventListener("click", () => {
   const topRated = restaurants.filter(r => r.rating >= 4.5);
   displayRestaurants(topRated);
 });
+
+const toggle = document.createElement("button");
+toggle.textContent = "🌙 Dark Mode";
+toggle.style.position = "fixed";
+toggle.style.bottom = "20px";
+toggle.style.right = "20px";
+document.body.append(toggle);
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
